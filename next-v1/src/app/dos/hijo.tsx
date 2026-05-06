@@ -1,7 +1,14 @@
-export default function Hijo ({children}){
-    return(
+// Hijo.tsx
+import { ReactNode } from "react";
+
+type HijoProps = {
+    children: ReactNode;
+};
+
+export default function Hijo({ children }: HijoProps) {
+    return (
         <div>
-            ESte es mi hijo{children}
+            Este es mi hijo {children}
         </div>
     );
 }

@@ -1,7 +1,12 @@
-export default function Props ({nombre}){
-    return(
+// Props.tsx
+type PropsComponentProps = {
+    nombre: string;
+};
+
+export default function Props({ nombre }: PropsComponentProps) {
+    return (
         <div>
-        {nombre}
+            {nombre}
         </div>
     );
 }
